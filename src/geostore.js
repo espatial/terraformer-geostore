@@ -355,6 +355,10 @@
     this.store.get( id, callback );
   };
 
+  GeoStore.prototype.getMany = function(ids, callback){
+    this.store.getMany( ids, callback );
+  };
+
   GeoStore.prototype.createReadStream = function () {
     this._stream = new Stream();
     return this._stream;
